@@ -31,18 +31,18 @@
             this.lbx_nome = new System.Windows.Forms.ListBox();
             this.lbx_numero = new System.Windows.Forms.ListBox();
             this.lbx_saldo = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.btn_numero = new System.Windows.Forms.Button();
+            this.btn_nome = new System.Windows.Forms.Button();
+            this.btn_conto_rosso = new System.Windows.Forms.Button();
+            this.btn_saldo_massimo = new System.Windows.Forms.Button();
+            this.btn_media = new System.Windows.Forms.Button();
+            this.btn_saldo_crescente = new System.Windows.Forms.Button();
+            this.txt_numero = new System.Windows.Forms.TextBox();
+            this.txt_nome = new System.Windows.Forms.TextBox();
+            this.txt_conto_rosso = new System.Windows.Forms.TextBox();
+            this.txt_saldo_massimo = new System.Windows.Forms.TextBox();
+            this.txt_media = new System.Windows.Forms.TextBox();
+            this.txt_saldo_crescente = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbx_nome
@@ -69,120 +69,129 @@
             this.lbx_saldo.Size = new System.Drawing.Size(120, 108);
             this.lbx_saldo.TabIndex = 2;
             // 
-            // button1
+            // btn_numero
             // 
-            this.button1.Location = new System.Drawing.Point(42, 339);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_numero.Enabled = false;
+            this.btn_numero.Location = new System.Drawing.Point(42, 339);
+            this.btn_numero.Name = "btn_numero";
+            this.btn_numero.Size = new System.Drawing.Size(75, 64);
+            this.btn_numero.TabIndex = 3;
+            this.btn_numero.Text = "Trova con numero di conto";
+            this.btn_numero.UseVisualStyleBackColor = true;
+            this.btn_numero.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btn_nome
             // 
-            this.button2.Location = new System.Drawing.Point(157, 339);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_nome.Enabled = false;
+            this.btn_nome.Location = new System.Drawing.Point(157, 339);
+            this.btn_nome.Name = "btn_nome";
+            this.btn_nome.Size = new System.Drawing.Size(75, 64);
+            this.btn_nome.TabIndex = 4;
+            this.btn_nome.Text = "Trova con nome del conto";
+            this.btn_nome.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_conto_rosso
             // 
-            this.button3.Location = new System.Drawing.Point(272, 339);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_conto_rosso.Enabled = false;
+            this.btn_conto_rosso.Location = new System.Drawing.Point(272, 339);
+            this.btn_conto_rosso.Name = "btn_conto_rosso";
+            this.btn_conto_rosso.Size = new System.Drawing.Size(75, 64);
+            this.btn_conto_rosso.TabIndex = 5;
+            this.btn_conto_rosso.Text = "Trova conti in rosso";
+            this.btn_conto_rosso.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn_saldo_massimo
             // 
-            this.button4.Location = new System.Drawing.Point(387, 339);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_saldo_massimo.Enabled = false;
+            this.btn_saldo_massimo.Location = new System.Drawing.Point(387, 339);
+            this.btn_saldo_massimo.Name = "btn_saldo_massimo";
+            this.btn_saldo_massimo.Size = new System.Drawing.Size(75, 64);
+            this.btn_saldo_massimo.TabIndex = 6;
+            this.btn_saldo_massimo.Text = "Trova conto con il saldo massimo";
+            this.btn_saldo_massimo.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btn_media
             // 
-            this.button5.Location = new System.Drawing.Point(502, 339);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn_media.Enabled = false;
+            this.btn_media.Location = new System.Drawing.Point(502, 339);
+            this.btn_media.Name = "btn_media";
+            this.btn_media.Size = new System.Drawing.Size(75, 64);
+            this.btn_media.TabIndex = 7;
+            this.btn_media.Text = "Calcola la media dei saldi";
+            this.btn_media.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btn_saldo_crescente
             // 
-            this.button6.Location = new System.Drawing.Point(617, 339);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btn_saldo_crescente.Enabled = false;
+            this.btn_saldo_crescente.Location = new System.Drawing.Point(617, 339);
+            this.btn_saldo_crescente.Name = "btn_saldo_crescente";
+            this.btn_saldo_crescente.Size = new System.Drawing.Size(75, 64);
+            this.btn_saldo_crescente.TabIndex = 8;
+            this.btn_saldo_crescente.Text = "Visualizza saldi in ordine crescente";
+            this.btn_saldo_crescente.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txt_numero
             // 
-            this.textBox1.Location = new System.Drawing.Point(29, 313);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 9;
+            this.txt_numero.Location = new System.Drawing.Point(29, 313);
+            this.txt_numero.Name = "txt_numero";
+            this.txt_numero.Size = new System.Drawing.Size(100, 20);
+            this.txt_numero.TabIndex = 9;
+            this.txt_numero.TextChanged += new System.EventHandler(this.txt_numero_TextChanged);
             // 
-            // textBox2
+            // txt_nome
             // 
-            this.textBox2.Location = new System.Drawing.Point(144, 313);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 10;
+            this.txt_nome.Location = new System.Drawing.Point(144, 313);
+            this.txt_nome.Name = "txt_nome";
+            this.txt_nome.Size = new System.Drawing.Size(100, 20);
+            this.txt_nome.TabIndex = 10;
+            this.txt_nome.TextChanged += new System.EventHandler(this.txt_nome_TextChanged);
             // 
-            // textBox3
+            // txt_conto_rosso
             // 
-            this.textBox3.Location = new System.Drawing.Point(259, 313);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 11;
+            this.txt_conto_rosso.Location = new System.Drawing.Point(259, 313);
+            this.txt_conto_rosso.Name = "txt_conto_rosso";
+            this.txt_conto_rosso.Size = new System.Drawing.Size(100, 20);
+            this.txt_conto_rosso.TabIndex = 11;
+            this.txt_conto_rosso.TextChanged += new System.EventHandler(this.txt_conto_rosso_TextChanged);
             // 
-            // textBox4
+            // txt_saldo_massimo
             // 
-            this.textBox4.Location = new System.Drawing.Point(374, 313);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 12;
+            this.txt_saldo_massimo.Location = new System.Drawing.Point(374, 313);
+            this.txt_saldo_massimo.Name = "txt_saldo_massimo";
+            this.txt_saldo_massimo.Size = new System.Drawing.Size(100, 20);
+            this.txt_saldo_massimo.TabIndex = 12;
             // 
-            // textBox5
+            // txt_media
             // 
-            this.textBox5.Location = new System.Drawing.Point(489, 313);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 13;
+            this.txt_media.Location = new System.Drawing.Point(489, 313);
+            this.txt_media.Name = "txt_media";
+            this.txt_media.Size = new System.Drawing.Size(100, 20);
+            this.txt_media.TabIndex = 13;
             // 
-            // textBox6
+            // txt_saldo_crescente
             // 
-            this.textBox6.Location = new System.Drawing.Point(604, 313);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 14;
+            this.txt_saldo_crescente.Location = new System.Drawing.Point(604, 313);
+            this.txt_saldo_crescente.Name = "txt_saldo_crescente";
+            this.txt_saldo_crescente.Size = new System.Drawing.Size(100, 20);
+            this.txt_saldo_crescente.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txt_saldo_crescente);
+            this.Controls.Add(this.txt_media);
+            this.Controls.Add(this.txt_saldo_massimo);
+            this.Controls.Add(this.txt_conto_rosso);
+            this.Controls.Add(this.txt_nome);
+            this.Controls.Add(this.txt_numero);
+            this.Controls.Add(this.btn_saldo_crescente);
+            this.Controls.Add(this.btn_media);
+            this.Controls.Add(this.btn_saldo_massimo);
+            this.Controls.Add(this.btn_conto_rosso);
+            this.Controls.Add(this.btn_nome);
+            this.Controls.Add(this.btn_numero);
             this.Controls.Add(this.lbx_saldo);
             this.Controls.Add(this.lbx_numero);
             this.Controls.Add(this.lbx_nome);
@@ -198,18 +207,18 @@
         private System.Windows.Forms.ListBox lbx_nome;
         private System.Windows.Forms.ListBox lbx_numero;
         private System.Windows.Forms.ListBox lbx_saldo;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button btn_numero;
+        private System.Windows.Forms.Button btn_nome;
+        private System.Windows.Forms.Button btn_conto_rosso;
+        private System.Windows.Forms.Button btn_saldo_massimo;
+        private System.Windows.Forms.Button btn_media;
+        private System.Windows.Forms.Button btn_saldo_crescente;
+        private System.Windows.Forms.TextBox txt_numero;
+        private System.Windows.Forms.TextBox txt_nome;
+        private System.Windows.Forms.TextBox txt_conto_rosso;
+        private System.Windows.Forms.TextBox txt_saldo_massimo;
+        private System.Windows.Forms.TextBox txt_media;
+        private System.Windows.Forms.TextBox txt_saldo_crescente;
     }
 }
 

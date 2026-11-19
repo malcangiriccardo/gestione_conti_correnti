@@ -38,5 +38,41 @@ namespace gestione_conti_correnti
         {
             
         }
+
+        private void txt_numero_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txt_numero.Text))
+            {
+                btn_numero.Enabled = false;
+            }
+            else
+            {
+                btn_numero.Enabled = true;
+            }
+        }
+
+        private void txt_nome_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txt_numero.Text))
+            {
+                btn_numero.Enabled = false;
+            }
+            else
+            {
+                btn_numero.Enabled = true;
+            }
+        }
+
+        private void txt_conto_rosso_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txt_numero.Text))
+            {
+                btn_numero.Enabled = false;
+            }
+            else
+            {
+                btn_numero.Enabled = true;
+            }
+        }
     }
 }
